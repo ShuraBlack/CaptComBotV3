@@ -1,0 +1,298 @@
+[
+    {
+        "cards": [{
+            "symbol": "2",
+            "skin": "<:default_two:990472318671282196>"
+        },
+        {
+            "symbol": "3",
+            "skin": "<:default_three:990472316142108683>"
+        },
+        {
+            "symbol": "4",
+            "skin": "<:default_four:990472303064272906>"
+        },
+        {
+            "symbol": "5",
+            "skin": "<:default_five:990472301847912519>"
+        },
+        {
+            "symbol": "6",
+            "skin": "<:default_six:990472311658405959>"
+        },
+        {
+            "symbol": "7",
+            "skin": "<:default_seven:990472310509146162>"
+        },
+        {
+            "symbol": "8",
+            "skin": "<:default_eight:990472300501561364>"
+        },
+        {
+            "symbol": "9",
+            "skin": "<:default_nine:990472306591662091>"
+        },
+        {
+            "symbol": "10",
+            "skin": "<:default_ten:990472314728640522>"
+        },
+        {
+            "symbol": "jack",
+            "skin": "<:default_bube:990472295241879612>"
+        },
+        {
+            "symbol": "queen",
+            "skin": "<:default_dame:990472298114986004>"
+        },
+        {
+            "symbol": "king",
+            "skin": "<:default_koenig:990472305698299924>"
+        },
+        {
+            "symbol": "ass",
+            "skin": "<:default_ass:990472292498829322>"
+        },
+        {
+            "symbol": "clubs",
+            "skin": "<:default_clubs:990472296391139390>"
+        },
+        {
+            "symbol": "spades",
+            "skin": "<:default_spades:990472313432576030>"
+        },
+        {
+            "symbol": "diamonds",
+            "skin": "<:default_diamonds:990472299251638282>"
+        },
+        {
+            "symbol": "heart",
+            "skin": "<:default_heart:990472304276418641>"
+        },
+        {
+            "symbol": "top",
+            "skin": "<:default_top:990513333096570900>"
+        },
+        {
+            "symbol": "bottom",
+            "skin": "<:default_bottom:990513331913764864> "
+        }
+        ],
+        "name": "DEFAULT"
+    },
+    {
+        "cards": [{
+            "symbol": "2",
+            "skin": "<:royal_two:991668023284998245>"
+        },
+        {
+            "symbol": "3",
+            "skin": "<:royal_three:991668021691170828>"
+        },
+        {
+            "symbol": "4",
+            "skin": "<:royal_four:991668011985547344>"
+        },
+        {
+            "symbol": "5",
+            "skin": "<:royal_five:991668010475593779>"
+        },
+        {
+            "symbol": "6",
+            "skin": "<:royal_six:991668018167939092>"
+        },
+        {
+            "symbol": "7",
+            "skin": "<:royal_seven:991668016913842266>"
+        },
+        {
+            "symbol": "8",
+            "skin": "<:royal_eight:991668009565437984>"
+        },
+        {
+            "symbol": "9",
+            "skin": "<:royal_nine:991668015626211389>"
+        },
+        {
+            "symbol": "10",
+            "skin": "<:royal_ten:991668020890046474>"
+        },
+        {
+            "symbol": "jack",
+            "skin": "<:royal_bube:991668027668050001>"
+        },
+        {
+            "symbol": "queen",
+            "skin": "<:royal_dame:991668030503391322>"
+        },
+        {
+            "symbol": "king",
+            "skin": "<:royal_koenig:991668014464368640>"
+        },
+        {
+            "symbol": "ass",
+            "skin": "<a:royal_ass:991668026225209344>"
+        },
+        {
+            "symbol": "clubs",
+            "skin": "<:royal_clubs:991668029148647464>"
+        },
+        {
+            "symbol": "spades",
+            "skin": "<:royal_spades:991668019564642304>"
+        },
+        {
+            "symbol": "diamonds",
+            "skin": "<:royal_diamonds:991668008143560774>"
+        },
+        {
+            "symbol": "heart",
+            "skin": "<:royal_heart:991668013000572949>"
+        }
+        ],
+        "name": "ROYAL"
+    },
+    {
+        "cards": [{
+            "symbol": "2",
+            "skin": "<:elegant_two:990748540550672465>"
+        },
+        {
+            "symbol": "3",
+            "skin": "<:elegant_three:990748539275608135>"
+        },
+        {
+            "symbol": "4",
+            "skin": "<:elegant_four:990748528001302569>"
+        },
+        {
+            "symbol": "5",
+            "skin": "<:elegant_five:990748526977884230>"
+        },
+        {
+            "symbol": "6",
+            "skin": "<:elegant_six:990748534649286687>"
+        },
+        {
+            "symbol": "7",
+            "skin": "<:elegant_seven:990748533210632272>"
+        },
+        {
+            "symbol": "8",
+            "skin": "<:elegant_eight:990748525426016327>"
+        },
+        {
+            "symbol": "9",
+            "skin": "<:elegant_nine:990748531792941118>"
+        },
+        {
+            "symbol": "10",
+            "skin": "<:elegant_ten:990748537723695155>"
+        },
+        {
+            "symbol": "jack",
+            "skin": "<:elegant_bube:990748521441423360>"
+        },
+        {
+            "symbol": "queen",
+            "skin": "<:elegant_dame:990748523521802310>"
+        },
+        {
+            "symbol": "king",
+            "skin": "<:elegant_koenig:990748530861801602>"
+        },
+        {
+            "symbol": "ass",
+            "skin": "<:elegant_ass:990748519969214474>"
+        },
+        {
+            "symbol": "clubs",
+            "skin": "<:elegant_clubs:990748522481598534>"
+        },
+        {
+            "symbol": "spades",
+            "skin": "<:elegant_spades:990748536482185286>"
+        },
+        {
+            "symbol": "diamonds",
+            "skin": "<:elegant_diamonds:990748524591333436>"
+        },
+        {
+            "symbol": "heart",
+            "skin": "<:elegant_heart:990748529758707743>"
+        }
+        ],
+        "name": "ELEGANT"
+    },
+    {
+        "cards": [{
+            "symbol": "2",
+            "skin": "<:jewel_two:991646397524881459>"
+        },
+        {
+            "symbol": "3",
+            "skin": "<:jewel_three:991646396702789735>"
+        },
+        {
+            "symbol": "4",
+            "skin": "<:jewel_four:991646385315250216>"
+        },
+        {
+            "symbol": "5",
+            "skin": "<:jewel_five:991646383885004820>"
+        },
+        {
+            "symbol": "6",
+            "skin": "<:jewel_six:991646392026153020>"
+        },
+        {
+            "symbol": "7",
+            "skin": "<:jewel_seven:991646390159687681>"
+        },
+        {
+            "symbol": "8",
+            "skin": "<:jewel_eight:991646382647677008>"
+        },
+        {
+            "symbol": "9",
+            "skin": "<:jewel_nine:991646389199175720>"
+        },
+        {
+            "symbol": "10",
+            "skin": "<:jewel_ten:991646395322880050>"
+        },
+        {
+            "symbol": "jack",
+            "skin": "<:jewel_bube:991646401077465148>"
+        },
+        {
+            "symbol": "queen",
+            "skin": "<:jewel_dame:991646403711488000>"
+        },
+        {
+            "symbol": "king",
+            "skin": "<:jewel_koenig:991646387936698468>"
+        },
+        {
+            "symbol": "ass",
+            "skin": "<:jewel_ass:991646398950952971>"
+        },
+        {
+            "symbol": "clubs",
+            "skin": "<:jewel_clubs:991646402453196800>"
+        },
+        {
+            "symbol": "spades",
+            "skin": "<:jewel_spades:991646393838096505>"
+        },
+        {
+            "symbol": "diamonds",
+            "skin": "<:jewel_diamond:991646405221425183>"
+        },
+        {
+            "symbol": "heart",
+            "skin": "<:jewel_heart:991646386498043914>"
+        }
+        ],
+        "name": "JEWEL"
+    }
+]

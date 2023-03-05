@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" http-equiv="refresh" content="TIME">
+    <title>CaptCommunity Assistent Player</title>
+    <link rel="icon" href="https://i.postimg.cc/rpFxk9Hs/YT-Logo-II-Transparent.png">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .showcase {
+            position: absolute;
+            overflow: hidden;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111;
+            transition: 0.5s;
+            z-index: 2;
+            transition: 0.5s;
+        }
+
+        .toggle {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: url(https://i.ibb.co/HrfVRcx/menu.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1);
+        }
+
+        .toggle:hover {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: url(https://i.ibb.co/HrfVRcx/menu.png);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: center;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(0.9);
+        }
+
+        .toggle.active {
+            background: url(https://i.ibb.co/rt3HybH/close.png);
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: scale(1);
+        }
+
+        .toggle.active:hover {
+            background: url(https://i.ibb.co/rt3HybH/close.png);
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            cursor: pointer;
+            transition: 0.5s;
+            transform: rotate(90deg) scale(0.9);
+        }
+
+        .logo {
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .showcase header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            z-index: 1000;
+            display: flex;
+            aline-items: center;
+            justify-content: space-between;
+        }
+
+        .showcase header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .showcase header img {
+            top: 5;
+        }
+
+        .showcase object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1000;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .text {
+            position: relative;
+            z-index: 10;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .text h2 {
+            font-size: 5em;
+            font-weight: 800;
+            line-height: 1em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .text h3 {
+            font-size: 4em;
+            font-weight: 700;
+            line-height: 1em;
+            text-transform: uppercase;
+            color: #ccc;
+        }
+
+        .text p {
+            font-size: 1.1em;
+            margin: 20px 0;
+            font-weight: 400;
+            max-width: 700px;
+            color: #fff;
+        }
+
+        .text a {
+            display: inline-block;
+            font-size: 1em;
+            background: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: #111;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.2s;
+        }
+
+        .text a:hover{
+            letter-spacing: 5px;
+        }
+
+        .controls {
+            padding: 0 18px;
+            dislay: none;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        .controls ul li {
+            color: #111;
+        }
+
+        @media (max-width: 991px) {
+        .showcase,
+        .showcase header {
+            padding: 40px;
+        }
+        .text h2 {
+            font-size: 3em;
+        }
+        .text h3 {
+            font-size: 2em;
+        }
+        }
+
+        .showcase.active {
+            right: 300px;
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+        .showcase object {
+            /* height = 100 * (9 / 16) = 56.25 */
+             height: 56.25vw;
+        }
+        }
+        @media (max-aspect-ratio: 16/9) {
+        .showcase objecte {
+            /* width = 100 / (9 / 16) = 177.777777 */
+            width: 177.78vh;
+        }
+        }
+
+        .menu {
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 100%;
+            display: flex;
+            background-color: #111;
+            align-items: center;
+            justify-contnent: center;
+        }
+
+        .menu ul {
+            position: relative;
+            list-style: none;
+        }
+
+        .menu ul li {
+            font-size: 20px;
+            color: #aaa;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .menu ul li a:hover {
+            color: #03a9f4;
+        }
+
+        .text button {
+            display: inline-block;
+            font-size: 1em;
+            background: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: #111;
+            border: none;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.2s;
+            opacity: 0.3;
+        }
+
+        .text button:hover {
+            opacity: 1;
+        }
+
+        .volume-control {
+            padding: 5px 0;
+            width: 68%;
+        }
+
+        .slidecontainer {
+            padding: 5px 0;
+            width: 68%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 25px;
+            background: #fff;
+            outline: none;
+            opacity: 0.3;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #333;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .volume-control {
+            width: VLENGTH;
+        }
+
+        .text input[type=text]  {
+            display: inline-block;
+            font-size: 1em;
+            background: #fff;
+            width: TLENGTH;
+            padding: 10px 2px;
+            text-decoration: none;
+            color: #111;
+            border: none;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            transition: 0.2s;
+            opacity: 0.3;
+        }
+
+        .text input[type=text]:hover {
+            opacity: 1;
+        }
+
+        .text input[type=text]:focus {
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <section class="showcase">
+
+        <header>
+            <a href="https://discord.gg/MJGYEb7EA9" target="_blank"><h2 class="logo"><img width="6%" height="6%" src='https://i.postimg.cc/bNgtD3mH/YT-Logo-II.gif' border='0' alt='YT-Logo-II'/>CaptCom - Music Player</h2></a>
+            <div class="toggle"></div>
+        </header>
+
+        <!-- <object data="https://img.youtube.com/vi/i1IKnWDecwA/hqdefault.jpg"></object> -->
+        VFRAME
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Aktuelles Lied</h2>
+            <h3>TITLE</h3>
+            <p id="time">DURATION</p>
+            <a href="VIDEOLINK" target="_blank">Zum Video</a>
+            <form action="" method="post" id="control" name="controls">
+                <button class="stop" name="stop" onclick="javascript:controlClicked(this.name)">Stop</button>
+                <button class="resume" name="resume" onclick="javascript:controlClicked(this.name)">Resume/Pause</button>
+                <button class="next" name="next" onclick="javascript:controlClicked(this.name)">Next</button>
+            </form>
+            <form class="volume-control" action="" method="post">
+                <input type="range" min="0" max="100" value="VOLUME" class="slider" id="volume" onchange="javascript:volumeChange(this.value)">
+            </form>
+            <form action="" method="post" id="test" name="test" class="test">
+                <input type="text" name="url" class="urlrequest">
+                <button class="send" onclick="javascript:urlRequest(urlRequest.value)">Send</button>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><strong>- Warteschlange -</strong></li>
+            TRACKS
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+
+
+        var currentSec = DSEC;
+        var duration = "DURATION";
+        var max = DMAX
+
+        var timer = setInterval(function() {
+            if (sec + 1 == max || max == -1) {
+                return;
+            }
+            var sec = currentSec % 60;
+            var min = Math.floor(currentSec / 60) % 60;
+            var hour = Math.floor(min / 60) % 60;
+            document.getElementById("time").innerHTML = (hour > 0 ? hour + "h " : "")
+                        + (min < 10 ? "0" + min : min) + "m "
+                        + (sec < 10 ? "0" + sec : sec) + "s" + " / " + duration;
+            currentSec++;
+        }, 1000)
+    </script>
+    <script>
+            // http://localhost:8000/player/
+            // http://178.32.109.146:8000/player/
+            function controlClicked(name) {
+               var xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://178.32.109.146:8000/player/", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+                xhr.send(name); 
+            }
+
+            function volumeChange(newVal) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://178.32.109.146:8000/player/", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+                xhr.send("volume " + newVal);
+            }
+
+            function urlRequest(url) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "http://178.32.109.146:8000/player/", true);
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
+                xhr.send("url " + url);
+            }
+    </script>
+</body>
+</html>
